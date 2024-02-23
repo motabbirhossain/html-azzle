@@ -1,0 +1,38 @@
+@use "../utils" as *;
+
+/* ----------------------------------
+	09. section-title css
+ ------------------------------------ */
+
+ .sec-title{
+	padding-bottom: 80px;
+	@media (max-width:767px) {
+		padding-bottom: 50px;
+	}
+	@media (max-width:575px) {
+		padding-bottom: 40px;
+	}
+	&__title{
+		font-family: $heading-font;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 100%;
+		text-align: center;
+		letter-spacing: -2px;
+		color: $black;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+ }
+
+
+/* ----------------------------------
+	HERO TITLE STYLEING
+ ------------------------------------ */
+
+
+/* ----------------------------------
+	All SECTION TITLE STYLEING
+ ------------------------------------ */
+

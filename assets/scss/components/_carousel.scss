@@ -1,0 +1,56 @@
+@use "../utils" as *;
+/* ----------------------------------
+	08. carousel css
+ ------------------------------------ */
+
+ .hero-one__company{
+	padding: 80px 0px 130px;
+	border-top: 1px solid $gray;
+	&__title{
+		font-family:$body-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 167%;
+		text-align: center;
+		color:$textcolor;
+		padding-bottom: 0;
+		margin-bottom: 80px;
+	}
+	&__item{
+		background: transparent;
+		img{
+			cursor: pointer;
+			filter: grayscale(100%);
+			opacity: 0.3;
+			transition: all 0.3s ease-in-out;
+			background: transparent;
+		}
+		&:hover{
+			img{
+				filter: grayscale(0%);
+				opacity: 1;
+			}
+		}
+	}
+ }
+
+ .main-footer__top__item{
+	&__text{
+		font-family: $heading-font;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 120px;
+		line-height: 100%;
+		text-align: center;
+		letter-spacing: -2px;
+		color: $black;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		img{
+			margin-right: 24px;
+			vertical-align: middle;
+			margin-bottom: 20px;
+		}
+	}
+ }

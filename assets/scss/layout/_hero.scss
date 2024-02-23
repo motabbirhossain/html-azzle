@@ -1,0 +1,53 @@
+@use '../utils' as *;
+
+/* ----------------------------------
+	12. Hero css
+ ------------------------------------ */
+
+.hero-one{
+	position: relative;
+	padding-top: 130px;
+	background: #EFEAE3;
+	border-radius: 0 0 100px 100px;
+	&_content{
+		position: relative;
+		z-index: 1;
+
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 120px;
+		line-height: 100%;
+		text-align: center;
+		letter-spacing: -2px;
+		color:$black;
+		margin-bottom: 24px;
+		max-width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__text{
+		font-family: $body-font;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 21px;
+		line-height: 143%;
+		text-align: center;
+		color:$textcolor;
+		margin-bottom: 50px;
+		max-width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 25px;
+		flex-wrap: wrap;
+		margin-bottom: 80px;
+	}
+	&__thumb{
+		padding-bottom: 50px;
+	}
+}

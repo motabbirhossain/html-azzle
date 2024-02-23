@@ -1,0 +1,267 @@
+@use '../utils' as *;
+
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Azzle - AI Technology & Startup Business HTML Template
+    Author: Motabbor Hossain
+    Description: Azzle – It’s an amazing AI Technology and startup Business. This Template mixes modern, classic, Creative, and clean styles with better UI and UX. Perfect choice for your business. This file is very well organized. This template includes 21 well-designed pages in HTML, which are easy to edit and customize to fit your needs. It’s based on 1296px Grid System.
+    Version: 1.0.0
+
+-----------------------------------------------------------------------------------*/
+
+
+/************ TABLE OF CONTENTS ***************
+    01. THEME DEFAULT CSS
+    02. animation css
+    03. Template Helps Classes - Styles
+    05. preloader css
+    06. buttons css
+    07. background CSS
+    08. carousel css
+    09. section-title css
+
+    10. header css
+    11. meanmenu css
+    12. Hero css
+    13. about css
+    14. services css
+    15. Chose Us css
+    16. feature css
+    17. projects css
+    18. 404 css
+    29. testimonial css
+    20. team css
+    21. blog css
+    22. brand css
+    23. process css
+    24. fact css
+    25. CTA css
+    26. portfolio css
+    27. faq css
+    28. contact css
+    29. footer css
+**********************************************/
+
+
+/*----------------------------------------
+  01. THEME DEFAULT CSS START
+----------------------------------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*---------------------------------
+    typography css start 
+---------------------------------*/
+body {
+	font-family: $body-font;
+	font-size: 16px;
+	font-weight: 600;
+	color: $textcolor;
+	line-height: 1.5;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	color: $black;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h1 a ,h2 a, h3 a, h4 a, h5 a, h6 a  {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a  {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include transition(.3s);
+}
+
+
+button {
+    border: 0px;
+}
+a,button {
+  &:hover, &:focus, &:active {
+  text-decoration: none;
+  outline: none  ;
+  border: 0;
+  }
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+input:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    display: none;
+}
+
+.form-control{
+    border-radius: 0px;
+}
+input::-webkit-focus-inner {
+    border: 0;
+    display: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+ -webkit-box-shadow: 0 0 0px 1000px $white inset  !important;
+}
+
+::placeholder {
+    color: $gray;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: $gray;
+}
+::-ms-input-placeholder { 
+    color: $gray;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+form {
+    position: relative;
+}
+button{
+    background: transparent;
+    border: none;
+}
+.form-control:focus {
+    outline: 1px solid $gray;
+    border: 1px solid $gray;
+    box-shadow:  0 0 0  ;
+}
+
+.body-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: crosshair;
+    z-index: 111;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.45s ease-in-out;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+#scrollUp {
+    background-color: $base;
+    border-radius: 50%;
+    bottom: 20px;
+    color: $white;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
+    font-weight: 500;
+   transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
+
+
+@keyframes sticky {
+    0% {
+        opacity: 0;
+        margin-top: -120px;
+    }  
+    50% {
+        opacity: 0;
+        margin-top: -60px;
+    }  
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+.scroll-up-btn {
+    a {
+        display: inline-block;
+        padding: 16px 20px;
+        border-radius: 10px;
+        line-height: 1;
+        background-color:$base;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+}

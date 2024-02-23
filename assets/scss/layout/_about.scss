@@ -1,0 +1,260 @@
+@use "../utils" as *;
+/* ----------------------------------
+	13. about css
+------------------------------------ */
+.about-one{
+	position: relative;
+	z-index: 1;
+	padding: 120px 0px;
+	&__left{
+		
+	}
+	&__right{
+		
+	}
+	&__thumb{
+
+	}
+	&__content{
+		&__title{
+			font-style: normal;
+			font-weight: 700;
+			font-size: 80px;
+			line-height: 100%;
+			letter-spacing: -2px;
+			margin-bottom: 24px;
+			padding-bottom: 0;
+		}
+		&__text{
+			font-family: $body-font;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 21px;
+			line-height:  143%;
+			color: $textcolor;
+			padding-bottom: 0;
+		}
+		&__text + &__text{
+			margin-top: 25px;
+		}
+	}
+	.order-two{
+		margin-top: 165px;
+	}
+	&__list{
+		margin-top: 50px;
+		margin-left: 0;
+		margin-bottom: 0;
+		&__item{
+			font-family: $heading-font;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 129%;
+			letter-spacing: -0.5px;
+			color: $black;
+			i{
+				font-size: 24px;
+				color: $black;
+				margin-right: 15px;
+				transition: all 0.4s ease;
+			}
+			&:hover{
+				i{
+					color: $base;
+				}
+			}
+		}
+		&__item + &__item{
+			margin-top: 24px;
+		}
+	}
+}
+
+/* ----------------------------------
+	13. Card css
+------------------------------------ */
+
+.card-one{
+	position: relative;
+	border-radius: 50px;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	background: $black;
+	&__left{
+		margin-left: -120px;
+		margin-right: 40px;
+	}
+	&__thumb{
+		img{
+			border-radius: 50px;
+			object-fit: cover;
+			@media (max-width:991px) {
+				width: 100%;
+			}
+		}
+	}
+	&__right{
+
+	}
+	&__top{
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid $textcolor;
+		&__title{
+			font-family: $heading-font;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 80px;
+			line-height: 100%;
+			letter-spacing: -2px;
+			color: $white;
+			padding-bottom: 0;
+			margin-bottom: 24px;
+		}
+		&__text{
+			font-family: $body-font;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 21px;
+			line-height: 143%;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			color: $white;
+		}
+	}
+	&__funfact{
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		&__item{
+			&__count{
+				display: flex;
+				align-items: center;
+				
+				font-family: $heading-font;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 120px;
+				line-height: 100%;
+				letter-spacing: -2px;
+				color: #FE330A;
+				span{
+					color: inherit;
+				}
+			}
+			&__text{
+				font-family: $body-font;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 21px;
+				line-height: 143%;
+				color: #EAEDF0;
+			}
+		}
+	}
+}
+
+/* ----------------------------------
+	13. Price css
+------------------------------------ */
+
+.price-one{
+	padding-top: 130px;
+	padding-bottom: 150px;
+	.sec-title{
+		padding-bottom: 50px;
+	}
+	&__item{
+		position: relative;
+		z-index: 1;
+		border-radius: 10px;
+		background: #EFEAE3;
+		padding: 40px;
+		overflow: hidden;
+		&__top{
+			padding-bottom: 24px;
+			margin-bottom: 24px;
+			border-bottom: 1px solid #DBD6CF;
+			&__title{
+				font-family: $heading-font;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 28px;
+				line-height: 129%;
+				letter-spacing: -0.5px;
+				color: $black;
+				margin-bottom: 10px;
+				padding-bottom: 0;
+			}
+			&__dec{
+				font-family: $body-font;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 167%;
+				color: $textcolor;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+		&__content{
+			&__top{
+				&__text{
+					font-family: $body-font;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 167%;
+					color: $textcolor;
+				}
+			}
+			&__number{
+				font-family: $body-font;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 80px;
+				line-height: 100%;
+				letter-spacing: -2px;
+				color: $black;
+				margin-bottom: 15px;
+				padding-bottom: 0;
+				span{
+					color: inherit;
+					font-weight: 600;
+					font-size: 18px;
+					line-height: 167%;
+				}
+			}
+			&__btn{
+
+			}
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 0%;
+			background: $black;
+			z-index: -1;
+		}
+		&:hover {
+			&::after{
+				height: 100%;
+			}
+		}
+		&:hover &__top{
+			border-bottom: 1px solid $textcolor;
+			&__title,&__dec{
+				color: $white;
+			}
+		}
+		&:hover &__content{
+			&__number,.price-one__item__content__top__text{
+				color: $white;
+			}
+		}
+	}
+}

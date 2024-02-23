@@ -1,0 +1,119 @@
+@use '../utils' as *;
+
+/* ------------------------------------------------------------------
+	11. meanmenu css
+-------------------------------------------------------------------- */
+.main-menu {
+	ul {
+		line-height: 1;
+		margin-bottom: 0;
+		>li {
+			display: inline-block;
+			position: relative;
+			line-height: 1;
+			position: relative;
+			margin-right: 30px;
+			>a {
+				text-transform: capitalize;
+				display: block;
+				padding: 25px 0px;
+				overflow: hidden;
+				font-family: $heading-font;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				text-transform: capitalize;
+				color:$black;
+			}
+
+			&.has-dropdown {
+				a {
+					padding-right: 25px;
+
+					&::after {
+						content: "\f107";
+						font-family: $special-font;
+						font-weight: 700;
+						clear: both;
+						position: absolute;
+						right: 2%;
+					}
+				}
+			}
+			&:hover {
+				>a {
+					color: $base;
+				}
+				>ul {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+
+			>ul {
+				position: absolute;
+				top: 100%;
+				width: 200px;
+				background-color: $white;
+				left: 0;
+				z-index: 999;
+				box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+				visibility: hidden;
+				opacity: 0;
+				transform: translateY(40px);
+				transition: all 0.5s ease-in-out;
+				padding: 10px 0px;
+
+				li {
+					display: block;
+					margin-right: 0;
+
+					>a {
+						text-align: left;
+						display: block;
+						color: $black;
+						padding: 15px 25px;
+						@include transition(0.4s);
+
+						&:hover {
+							color: $secondary;
+							padding-left: 30px !important;
+						}
+
+						&::after {
+							display: none;
+						}
+					}
+
+					&.has-dropdown {
+						margin-right: 0;
+
+						>a {
+							padding-right: 25px;
+
+							&::after {
+								display: block;
+								content: "\f105";
+								font-family: $special-font;
+								font-weight: 700;
+								position: absolute;
+								right: 15px;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+						}
+					}
+				}
+
+				ul {
+					left: 100%;
+					top: 0;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
