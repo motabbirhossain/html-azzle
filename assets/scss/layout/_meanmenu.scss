@@ -12,9 +12,7 @@
 			position: relative;
 			line-height: 1;
 			position: relative;
-			margin-right: 30px;
 			>a {
-				text-transform: capitalize;
 				display: block;
 				padding: 25px 0px;
 				overflow: hidden;
@@ -26,25 +24,11 @@
 				text-align: center;
 				text-transform: capitalize;
 				color:$black;
-			}
-
-			&.has-dropdown {
-				a {
-					padding-right: 25px;
-
-					&::after {
-						content: "\f107";
-						font-family: $special-font;
-						font-weight: 700;
-						clear: both;
-						position: absolute;
-						right: 2%;
-					}
-				}
+				text-shadow: 0 0 0.1px currentColor;
 			}
 			&:hover {
 				>a {
-					color: $base;
+					color: $textcolor-two;
 				}
 				>ul {
 					opacity: 1;
@@ -65,22 +49,22 @@
 				opacity: 0;
 				transform: translateY(40px);
 				transition: all 0.5s ease-in-out;
-				padding: 10px 0px;
+				padding: 20px;
 
 				li {
 					display: block;
 					margin-right: 0;
-
+					transition: all 0.4s ease-in-out;
 					>a {
 						text-align: left;
 						display: block;
 						color: $black;
-						padding: 15px 25px;
+						padding: 6px 10px;
 						@include transition(0.4s);
 
 						&:hover {
-							color: $secondary;
-							padding-left: 30px !important;
+							color: $textcolor-two;
+							padding-left: 20px !important;
 						}
 
 						&::after {
@@ -106,6 +90,12 @@
 							}
 						}
 					}
+					&:hover{
+						background: $border-one;
+					}
+				}
+				li+li{
+					margin-top: 5px;
 				}
 
 				ul {
@@ -115,5 +105,12 @@
 				}
 			}
 		}
+	}
+}
+
+.main-menu__list >li+li{
+	margin-left: 48px;
+	@media (max-width:1199px) {
+		margin-left: 30px;
 	}
 }
