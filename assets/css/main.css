@@ -1213,9 +1213,10 @@ button {
   font-size: 18px;
   line-height: 167%;
   color: #191919;
+  margin-bottom: 50px;
 }
 .price-one__item__content__number {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -1230,6 +1231,15 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 167%;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0;
+}
+.price-one__item__content__btn a {
+  width: 100%;
+}
+.price-one__item__content__btn .azzle-btn:hover {
+  color: #000 !important;
 }
 .price-one__item::after {
   content: "";
@@ -1243,6 +1253,13 @@ button {
 }
 .price-one__item:hover::after {
   height: 100%;
+}
+.price-one__item:hover .azzle-btn {
+  border: 1px solid #FE330A;
+  color: #FFF;
+}
+.price-one__item:hover .azzle-btn::before {
+  background: #FE330A;
 }
 .price-one__item:hover .price-one__item__top {
   border-bottom: 1px solid #191919;

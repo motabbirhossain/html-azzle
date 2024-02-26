@@ -206,10 +206,11 @@
 					font-size: 18px;
 					line-height: 167%;
 					color: $textcolor;
+					margin-bottom: 50px;
 				}
 			}
 			&__number{
-				font-family: $body-font;
+				font-family: $heading-font;
 				font-style: normal;
 				font-weight: 700;
 				font-size: 80px;
@@ -223,10 +224,20 @@
 					font-weight: 600;
 					font-size: 18px;
 					line-height: 167%;
+					display: inline-block;
+					font-family: $body-font;
+					letter-spacing: 0;
 				}
 			}
 			&__btn{
-
+				a{
+					width: 100%;
+				}
+				.azzle-btn{
+					&:hover{
+						color: $black !important;
+					}
+				}
 			}
 		}
 		&::after{
@@ -242,6 +253,13 @@
 		&:hover {
 			&::after{
 				height: 100%;
+			}
+			.azzle-btn{
+				border: 1px solid $textcolor-two;
+				color: $white;
+				&::before{
+					background: $textcolor-two;
+				}
 			}
 		}
 		&:hover &__top{
