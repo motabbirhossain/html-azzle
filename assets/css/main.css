@@ -1458,6 +1458,29 @@ button {
 /* ----------------------------------
 	27. faq css
  ------------------------------------ */
+.faqs-one {
+  padding: 0px 0px 130px;
+}
+.faqs-one__title {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #000;
+  margin-bottom: 24px;
+}
+.faqs-one__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  color: #191919;
+  margin-bottom: 50px;
+}
+
 /* ----------------------------------
 	28. contact css
  ------------------------------------ */

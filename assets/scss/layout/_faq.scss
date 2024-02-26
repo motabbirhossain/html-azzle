@@ -3,3 +3,28 @@
 /* ----------------------------------
 	27. faq css
  ------------------------------------ */
+.faqs-one{
+	padding: 0px 0px 130px;
+	&__left{
+
+	}
+	&__title{
+		font-family: $heading-font;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 100%;
+		letter-spacing: -2px;
+		color: $black;
+		margin-bottom: 24px;
+	}
+	&__text{
+		font-family: $body-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 143%;
+		color: $textcolor;
+		margin-bottom: 50px;
+	}
+}
