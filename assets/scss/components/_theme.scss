@@ -274,6 +274,10 @@ button{
   }
 
 .container {
-    max-width: 1300px;
+    max-width: 1326px;
     width: 100%;
+}
+
+.gutter-x-0{
+    --bs-gutter-x:0;
 }

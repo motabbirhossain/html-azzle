@@ -273,8 +273,12 @@ button {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1326px;
   width: 100%;
+}
+
+.gutter-x-0 {
+  --bs-gutter-x:0;
 }
 
 /* ----------------------------------
@@ -1259,6 +1263,90 @@ button {
 /* ----------------------------------
 	16. feature css
  ------------------------------------ */
+.feature-one {
+  position: relative;
+  z-index: 1;
+  padding: 120px 0px 0px;
+}
+@media (max-width: 991px) {
+  .feature-one {
+    padding: 100px 0px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .feature-one {
+    padding: 80px 0px 0px;
+  }
+}
+.feature-one__list {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.feature-one__item {
+  flex: 25%;
+  width: 25%;
+  padding: 30px;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.feature-one__item__icon {
+  margin-bottom: 30px;
+}
+.feature-one__item__icon svg {
+  width: 70px;
+  height: 70px;
+  fill: #000;
+}
+.feature-one__item__title {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.5px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.feature-one__item__title a {
+  color: inherit;
+}
+.feature-one__item__title a:hover {
+  color: #FE330A;
+}
+.feature-one__item__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #191919;
+  margin-bottom: 50px;
+}
+.feature-one__item__btn {
+  font-size: 30px;
+  color: #000;
+}
+.feature-one__item__btn:hover i {
+  animation: left-to-right 1.5s linear;
+}
+.feature-one__item:hover {
+  background: #000;
+}
+.feature-one__item:hover .feature-one__item__title, .feature-one__item:hover .feature-one__item__text {
+  color: #FFF;
+}
+.feature-one__item:hover .feature-one__item__btn {
+  color: #FE330A;
+}
+.feature-one__item:hover .feature-one__item__icon svg {
+  fill: #FE330A;
+}
+.feature-one__item + .feature-one__item {
+  border-left: 2px solid #000;
+}
+
 /* ----------------------------------
 	17. projects css
  ------------------------------------ */

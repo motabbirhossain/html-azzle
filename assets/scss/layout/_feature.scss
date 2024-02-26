@@ -3,3 +3,87 @@
 /* ----------------------------------
 	16. feature css
  ------------------------------------ */
+
+ .feature-one{
+	position: relative;
+	z-index: 1;
+	padding: 120px 0px 0px;
+	@media (max-width:991px) {
+		padding: 100px 0px 0px;
+	}
+	@media (max-width:991px) {
+		padding: 80px 0px 0px;
+	}
+	&__list{
+		display: flex;
+		align-items: center;
+		border-radius: 10px;
+		border: 2px solid $black;
+	}
+	&__item{
+		flex: 25%;
+		width: 25%;
+		padding: 30px;
+		background: transparent;
+		transition: all 0.4s ease-in-out;
+		&__icon{
+			svg{
+				width: 70px;
+				height: 70px;
+				fill: $black;
+			}
+			margin-bottom: 30px;
+		}
+		&__title{
+			font-family: $heading-font;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 129%;
+			letter-spacing: -0.5px;
+			color: $black;
+			margin-bottom: 15px;
+			a{
+				color: inherit;
+				&:hover{
+					color: $textcolor-two;
+				}
+			}
+		}
+		&__text{
+			font-family: $body-font;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 167%;
+			color: $textcolor;
+			margin-bottom: 50px;
+		}
+		&__btn{
+			font-size: 30px;
+			color: $black;
+			&:hover{
+				i{
+					animation: left-to-right 1.5s linear;
+				}
+			}
+		}
+		&:hover{
+			background:$black;
+			.feature-one__item__title, .feature-one__item__text{
+				color: $white;
+			}
+			.feature-one__item__btn{
+				color: $textcolor-two;
+			}
+		}
+		&:hover &__icon{
+			svg{
+				fill: $textcolor-two;
+			}
+		}
+	}
+	&__item + &__item{
+		border-left: 2px solid $black;
+	}
+ }
