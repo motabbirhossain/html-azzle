@@ -1478,6 +1478,14 @@ button {
 .faqs-one {
   padding: 0px 0px 130px;
 }
+.faqs-one__right {
+  margin-left: 70px;
+}
+@media (max-width: 1199px) {
+  .faqs-one__right {
+    margin-left: 0px;
+  }
+}
 .faqs-one__title {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -1496,6 +1504,61 @@ button {
   line-height: 143%;
   color: #191919;
   margin-bottom: 50px;
+}
+
+.accordion-item {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #DBD6CF;
+}
+.accordion-item .accordion-header button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.5px;
+  color: #000;
+  background: transparent;
+  border-radius: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.accordion-item .accordion-header button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.accordion-item .accordion-header button::after {
+  width: auto;
+  height: auto;
+  background-image: none;
+  background-position: 0 0;
+  content: "\f067";
+  font-family: "Font Awesome 6 Pro";
+  color: #000;
+  transform: rotate(0);
+  font-size: 20px;
+}
+.accordion-item .accordion-header button:not(.collapsed)::after {
+  content: "\f068";
+}
+.accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border: none;
+}
+.accordion-item .accordion-body {
+  padding-top: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
 }
 
 /* ----------------------------------

@@ -8,6 +8,12 @@
 	&__left{
 
 	}
+	&__right{
+		margin-left: 70px;
+		@media (max-width:1199px) {
+			margin-left: 0px;
+		}
+	}
 	&__title{
 		font-family: $heading-font;
 		font-style: normal;
@@ -26,5 +32,64 @@
 		line-height: 143%;
 		color: $textcolor;
 		margin-bottom: 50px;
+	}
+
+}
+
+.accordion-item{
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid $border-one;
+	.accordion-header{
+		button{
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height:  129%;
+			letter-spacing: -0.5px;
+			color: $black;
+			background: transparent;
+			border-radius: none;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			padding-left: 0;
+			padding-right: 0;
+			&:focus{
+				border: none;
+				outline: none;
+				box-shadow: none;
+			}
+			&::after{
+				width: auto;
+				height: auto;
+				background-image: none;
+				background-position: 0 0;
+				content: "\f067";
+				font-family:$special-font ;
+				color: $black;
+				transform: rotate(0);
+				font-size: 20px;
+			}
+			&:not(.collapsed)::after{
+				content: "\f068";
+			}
+		}
+		
+	}
+	.accordion-button:not(.collapsed){
+		box-shadow: none;
+		border: none;
+	}
+	.accordion-body{
+		padding-top: 0;
+		font-family:$body-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 167%;
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 0;
 	}
 }
