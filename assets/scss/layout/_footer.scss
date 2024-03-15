@@ -102,6 +102,13 @@
                   margin-top: 10px;
             }
       }
+
+      &__form{
+            position: relative;
+            max-width: 300px;
+            width: 100%;
+            height: 50px;
+      }
 }
 
 .footer-widget{
