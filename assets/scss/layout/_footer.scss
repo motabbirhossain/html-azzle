@@ -71,7 +71,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 167%;
-            color: $black;
+            color: $textcolor;
             margin-bottom: 24px;
       }
       &__website{
@@ -79,11 +79,17 @@
             font-style: normal;
             font-size: 18px;
             line-height: 167%;
-            color: $black;
+            color: $textcolor;
             font-weight: 600;
+            strong{
+                  color: $black;
+            }
             a{
                   font-weight: 400;
                   color: inherit;
+                  &:hover{
+                        color: $secondary;
+                  }
             }
       }
       &__link{
@@ -93,9 +99,12 @@
                   font-weight: 400;
                   font-size: 18px;
                   line-height: 167%;
-                  color:$textcolor ;
+                  color:$textcolor;
                   a{
                         color: inherit;
+                        &:hover{
+                              color: $secondary;
+                        }
                   }
             }
             &__item + &__item{
@@ -107,7 +116,48 @@
             position: relative;
             max-width: 300px;
             width: 100%;
-            height: 50px;
+            border: 1px solid $black;
+            border-radius: 50px;
+            display: flex;
+            align-self:center;
+            width: 100%;
+            input{
+                  height: 50px;
+                  background: transparent;
+                  outline: 0;
+                  border: 0;
+                  font-family: $body-font;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height:150%;
+                  text-align: center;
+                  letter-spacing: 0.5px;
+                  color: $textcolor;
+                  padding-right: 20px;
+                  &::placeholder{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height:150%;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: $textcolor;
+                        padding-right: 20px;
+                  }
+            }
+            button{
+                  position: absolute;
+                  top: 5px;
+                  right: 5px;
+                  background: $black;
+                  border-radius: 50px;
+                  color: $white;
+                  padding: 8.5px 20px;
+                  &:hover{
+                        background: $secondary;
+                  }
+            }
       }
 }
 

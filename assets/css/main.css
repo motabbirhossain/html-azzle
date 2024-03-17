@@ -1560,6 +1560,9 @@ button {
   padding-right: 0;
   margin-bottom: 0;
 }
+.accordion-item:last-child {
+  border-bottom: 0px solid #DBD6CF;
+}
 
 /* ----------------------------------
 	28. contact css
@@ -1633,7 +1636,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
-  color: #000;
+  color: #191919;
   margin-bottom: 24px;
 }
 .main-footer__website {
@@ -1641,12 +1644,18 @@ button {
   font-style: normal;
   font-size: 18px;
   line-height: 167%;
-  color: #000;
+  color: #191919;
   font-weight: 600;
+}
+.main-footer__website strong {
+  color: #000;
 }
 .main-footer__website a {
   font-weight: 400;
   color: inherit;
+}
+.main-footer__website a:hover {
+  color: #F47102;
 }
 .main-footer__link__item {
   font-family: "DM Sans", sans-serif;
@@ -1659,6 +1668,9 @@ button {
 .main-footer__link__item a {
   color: inherit;
 }
+.main-footer__link__item a:hover {
+  color: #F47102;
+}
 .main-footer__link__item + .main-footer__link__item {
   margin-top: 10px;
 }
@@ -1666,7 +1678,58 @@ button {
   position: relative;
   max-width: 300px;
   width: 100%;
+  border: 1px solid #000;
+  border-radius: 50px;
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+.main-footer__form input {
   height: 50px;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #191919;
+  padding-right: 20px;
+}
+.main-footer__form input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #191919;
+  padding-right: 20px;
+}
+.main-footer__form input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #191919;
+  padding-right: 20px;
+}
+.main-footer__form button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #000;
+  border-radius: 50px;
+  color: #FFF;
+  padding: 8.5px 20px;
+}
+.main-footer__form button:hover {
+  background: #F47102;
 }
 
 .footer-widget--link {
