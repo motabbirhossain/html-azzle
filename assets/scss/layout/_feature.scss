@@ -15,17 +15,20 @@
 		padding: 80px 0px 0px;
 	}
 	&__list{
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 		align-items: center;
-		border-radius: 10px;
 		border: 2px solid $black;
+		background: $black;
+		gap: 2px;
 	}
 	&__item{
-		flex: 25%;
-		width: 25%;
+		// flex: 25%;
+		// width: 25%;
 		padding: 30px;
 		background: transparent;
 		transition: all 0.4s ease-in-out;
+		background-color: $white;
 		&__icon{
 			svg{
 				width: 70px;
@@ -82,10 +85,16 @@
 				fill: $textcolor-two;
 			}
 		}
+		// &:nth-child(5){
+		// 	border-left: 0px solid $black !important;
+		// }
 	}
-	&__item + &__item{
-		border-left: 2px solid $black;
-	}
+	// &__item:nth-child(4) + &__item{
+	// 	border-top: 2px solid $black;
+	// }
+	// &__item + &__item{
+	// 	border-left: 2px solid $black;
+	// }
  }
 
  .feature-two{

@@ -5,14 +5,11 @@
  ------------------------------------ */
 .faqs-one{
 	padding: 0px 0px 130px;
+	&--page{
+		padding-top: 130px;
+	}
 	&__left{
 
-	}
-	&__right{
-		margin-left: 70px;
-		@media (max-width:1199px) {
-			margin-left: 0px;
-		}
 	}
 	&__title{
 		font-family: $heading-font;
