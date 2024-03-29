@@ -71,6 +71,7 @@ body {
 	font-weight: 600;
 	color: $textcolor;
 	line-height: 1.5;
+    counter-reset: my-sec-counter;
 }
 
 a{
@@ -280,4 +281,8 @@ button{
 
 .gutter-x-0{
     --bs-gutter-x:0;
+}
+
+.gutter-y-40{
+    --bs-gutter-y:40px;
 }

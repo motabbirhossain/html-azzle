@@ -65,6 +65,7 @@ body {
   font-weight: 600;
   color: #191919;
   line-height: 1.5;
+  counter-reset: my-sec-counter;
 }
 
 a {
@@ -279,6 +280,10 @@ button {
 
 .gutter-x-0 {
   --bs-gutter-x:0;
+}
+
+.gutter-y-40 {
+  --bs-gutter-y:40px;
 }
 
 /* ----------------------------------
@@ -1749,6 +1754,82 @@ button {
 .team-one__social a:hover {
   background: #FE330A;
   color: #000;
+}
+
+/* ----------------------------------
+	Team Details
+------------------------------------ */
+.team-details-one {
+  position: relative;
+  padding: 130px 0px;
+}
+.team-details-one__content {
+  margin-right: 80px;
+}
+.team-details-one__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #000000;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+.team-details-one__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  color: #191919;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.team-details-one__text + .team-details-one__text {
+  margin-top: 1.75rem;
+}
+.team-details-one__subtitle {
+  display: block;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 143%;
+  color: #191919;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.team-details-one__border {
+  width: 100%;
+  height: 1px;
+  background: #EAEDF0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.team-details-one__item__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: -1px;
+  color: #000000;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+}
+.team-details-one__item__title::before {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";
+}
+.team-details-one__item__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  color: #191919;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* ----------------------------------
