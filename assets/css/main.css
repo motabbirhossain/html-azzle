@@ -570,6 +570,20 @@ button {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: -1;
 }
+.azzle-btn--black {
+  padding: 18px 37px;
+  color: #FFF;
+}
+.azzle-btn--black:before {
+  width: 100%;
+}
+.azzle-btn--black:hover {
+  border: 0px solid #000;
+  color: #000;
+}
+.azzle-btn--black:hover:before {
+  width: 0%;
+}
 .azzle-btn:hover {
   border: 1px solid #000;
   color: #FFF;
@@ -664,6 +678,92 @@ button {
 /* ----------------------------------
 	HERO TITLE STYLEING
  ------------------------------------ */
+.page-header {
+  position: relative;
+  padding-top: 195px;
+  padding-bottom: 130px;
+  background: #EFEAE3;
+  border-radius: 0px 0px 50px 50px;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .page-header {
+    padding-top: 170px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
+.page-header .container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.page-header__title {
+  margin-bottom: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #000;
+}
+@media (max-width: 991px) {
+  .page-header__title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header__title {
+    font-size: 50px;
+  }
+}
+
+.azzle-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.azzle-breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+.azzle-breadcrumb li:not(:last-of-type)::after {
+  content: "\f054";
+  position: relative;
+  top: 0px;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  font-weight: 600;
+}
+.azzle-breadcrumb li span,
+.azzle-breadcrumb li a {
+  display: inline-flex;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 143%;
+  color: #000;
+}
+.azzle-breadcrumb li span {
+  color: #FE330A;
+}
+.azzle-breadcrumb li a:hover {
+  color: #FE330A;
+}
+
 /* ----------------------------------
 	All SECTION TITLE STYLEING
  ------------------------------------ */
@@ -1084,6 +1184,111 @@ button {
   margin-top: 24px;
 }
 
+.about-two .order-two .about-two__left {
+  margin-right: auto;
+  margin-left: 100px;
+}
+@media (max-width: 1199px) {
+  .about-two .order-two .about-two__left {
+    margin-left: 0;
+  }
+}
+.about-two .row + .row {
+  margin-top: 150px;
+}
+.about-two__left {
+  margin-right: 100px;
+}
+@media (max-width: 1199px) {
+  .about-two__left {
+    margin-right: 0;
+  }
+}
+.about-two__thumb {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.about-two__thumb__bg {
+  position: absolute;
+  top: 74px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  mix-blend-mode: luminosity;
+  border-radius: 20px 20px 0px 0px;
+}
+.about-two__content {
+  margin-bottom: 50px;
+}
+.about-two__content__title {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 107%;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+.about-two__content__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.about-two__content__text + .about-two__content__text {
+  margin-top: 25px;
+}
+.about-two__list {
+  margin-bottom: 0;
+  margin-left: -5px;
+}
+.about-two__list__item {
+  position: relative;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 1px;
+  color: #000;
+  padding-left: 25px;
+}
+.about-two__list__item i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
+  color: #321CA4;
+}
+.about-two__list__item + .about-two__list__item {
+  margin-top: 24px;
+}
+
+.about-page {
+  padding: 130px 0px 100px;
+}
+.about-page .sec-title__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.about-page .about-page__thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
 /* ----------------------------------
 	13. Card css
 ------------------------------------ */
@@ -1269,6 +1474,281 @@ button {
 }
 .price-one__item:hover .price-one__item__content__number, .price-one__item:hover .price-one__item__content .price-one__item__content__top__text {
   color: #FFF;
+}
+
+/* ----------------------------------
+	13. integrations-one
+------------------------------------ */
+.integrations-one {
+  padding: 130px 0px;
+  position: relative;
+  z-index: 1;
+  background: #000;
+}
+.integrations-one__bg {
+  position: absolute;
+  top: 74px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.integrations-one__content {
+  margin-bottom: 50px;
+}
+.integrations-one__content__title {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 107%;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+  color: #FFF;
+}
+.integrations-one__content__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #FFF;
+}
+.integrations-one__content__text + .integrations-one__content__text {
+  margin-top: 25px;
+}
+.integrations-one__list {
+  margin-bottom: 50px;
+  margin-left: -5px;
+}
+.integrations-one__list__item {
+  position: relative;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 1px;
+  color: #FFF;
+  padding-left: 25px;
+}
+.integrations-one__list__item i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
+  color: #321CA4;
+}
+.integrations-one__list__item + .integrations-one__list__item {
+  margin-top: 24px;
+}
+/* ----------------------------------
+	13. Funfact
+------------------------------------ */
+.funfact-one {
+  padding-bottom: 130px;
+  position: relative;
+}
+.funfact-one__item__count {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #FE330A;
+}
+.funfact-one__item__count span {
+  color: inherit;
+}
+.funfact-one__item__text {
+  margin-top: -4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ----------------------------------
+	mission-one
+------------------------------------ */
+.mission-one {
+  position: relative;
+  padding-bottom: 130px;
+}
+.mission-one__content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.mission-one__content__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #191919;
+}
+.mission-one__content__text + .mission-one__content__text {
+  margin-top: 20px;
+}
+.mission-one__content__btn {
+  margin-top: 40px;
+}
+.mission-one__thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ----------------------------------
+	content-one
+------------------------------------ */
+.content-one {
+  position: relative;
+  padding: 130px 0px;
+  background: #000;
+}
+.content-one__thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.content-one__content {
+  margin-left: 20px;
+}
+.content-one__content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.content-one__content__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+.content-one__content__list {
+  margin-bottom: 0;
+}
+.content-one__content__list__item {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  line-height: 133%;
+  color: #FE330A;
+}
+.content-one__content__list__item a {
+  color: #FFF;
+}
+.content-one__content__list__item a:hover {
+  text-decoration: underline;
+}
+.content-one__content__list__item + .content-one__content__list__item {
+  margin-top: 24px;
+}
+
+/* ----------------------------------
+	Team
+------------------------------------ */
+.team-one {
+  position: relative;
+  padding-bottom: 130px;
+}
+.team-one .team__section {
+  padding-bottom: 80px;
+}
+.team-one .team__section__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: #000000;
+}
+.team-one__box {
+  background: #EFEAE3;
+  border-radius: 20px;
+  padding: 20px;
+}
+.team-one__thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+.team-one__content {
+  padding-top: 24px;
+}
+.team-one__content__inner {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.team-one__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.team-one__title a {
+  color: inherit;
+}
+.team-one__title a:hover {
+  color: #FE330A;
+}
+.team-one__dec {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  color: #191919;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.team-one__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.team-one__social a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #EFEAE3;
+  border-radius: 50%;
+  background: #000;
+}
+.team-one__social a:hover {
+  background: #FE330A;
+  color: #000;
 }
 
 /* ----------------------------------

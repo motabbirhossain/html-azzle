@@ -41,7 +41,20 @@
         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         z-index: -1;
   }
-
+  &--black{
+    padding: 18px 37px;
+    color: $white;
+    &:before {
+      width: 100%;
+    }
+    &:hover {
+      border: 0px solid $black;
+      color: $black;
+      &:before {
+          width: 0%;
+      }
+  }
+  }
   &:hover {
         border: 1px solid $black;
         color: $white;

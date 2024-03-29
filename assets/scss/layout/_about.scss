@@ -70,6 +70,116 @@
 	}
 }
 
+.about-two{
+	.order-two{
+		.about-two__left{
+			margin-right: auto;
+			margin-left: 100px;
+			@media (max-width:1199px){
+				margin-left: 0;
+			}
+		}
+	}
+	.row + .row{
+		margin-top: 150px;
+	}
+	&__left{
+		margin-right: 100px;
+		@media (max-width:1199px){
+			margin-right: 0;
+		}
+	}
+	&__thumb{
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		&__bg{
+			position: absolute;
+			top: 74px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -1;
+			mix-blend-mode: luminosity;
+			border-radius: 20px 20px 0px 0px;
+		}
+	}
+
+	&__right{
+
+	}
+	&__content{
+		margin-bottom: 50px;
+		&__title{
+			font-family: 'Clash Display';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 75px;
+			line-height: 107%;
+			margin-bottom: 24px;
+			padding-bottom: 0;
+		}
+		&__text{
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 167%;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&__text + &__text{
+			margin-top: 25px;
+		}
+	}
+	&__list{
+		margin-bottom: 0;
+		margin-left: -5px;
+		&__item{
+			position: relative;
+			i{
+				position: absolute;
+				left: 0;
+				top: 10px;
+				font-size: 14px;
+				color: #321CA4;
+			}
+			font-family: 'Clash Display';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 129%;
+			letter-spacing: 1px;
+			color: $black;
+			padding-left: 25px;
+		}
+		&__item + &__item{
+			margin-top: 24px;
+		}
+	}
+}
+
+.about-page{
+	padding: 130px 0px 100px;
+	.sec-title__title{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 100%;
+		text-align: center;
+		letter-spacing: -2px;
+	}
+	.about-page__thumb{
+		img{
+			object-fit: cover;
+			width: 100%;
+			border-radius: 20px;
+		}
+	}
+}
+
 /* ----------------------------------
 	13. Card css
 ------------------------------------ */
@@ -271,6 +381,300 @@
 		&:hover &__content{
 			&__number,.price-one__item__content__top__text{
 				color: $white;
+			}
+		}
+	}
+}
+
+/* ----------------------------------
+	13. integrations-one
+------------------------------------ */
+.integrations-one{
+	padding: 130px 0px;
+	position: relative;
+	z-index: 1;
+	background: $black;
+	&__bg{
+		position: absolute;
+		top: 74px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+	}
+	&__content{
+		margin-bottom: 50px;
+		&__title{
+			font-family: 'Clash Display';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 75px;
+			line-height: 107%;
+			margin-bottom: 24px;
+			padding-bottom: 0;
+			color: $white;
+
+		}
+		&__text{
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 167%;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			color: $white;
+		}
+		&__text + &__text{
+			margin-top: 25px;
+		}
+	}
+	&__list{
+		margin-bottom: 50px;
+		margin-left: -5px;
+		&__item{
+			position: relative;
+			i{
+				position: absolute;
+				left: 0;
+				top: 10px;
+				font-size: 14px;
+				color: #321CA4;
+			}
+			font-family: 'Clash Display';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 129%;
+			letter-spacing: 1px;
+			color: $white;
+			padding-left: 25px;
+		}
+		&__item + &__item{
+			margin-top: 24px;
+		}
+	}
+
+	&__carousel__item{
+		
+	}
+}
+
+/* ----------------------------------
+	13. Funfact
+------------------------------------ */
+
+.funfact-one{
+	padding-bottom: 130px;
+	position: relative;
+
+	&__item{
+		&__count{
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			font-family: $heading-font;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 80px;
+			line-height:100%;
+			letter-spacing: -2px;
+			color: $textcolor-two;
+			span{
+				color: inherit;
+			}
+		}
+		&__text{
+			margin-top: -4px;
+			font-family: $body-font;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 167%;
+			color: $black;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+/* ----------------------------------
+	mission-one
+------------------------------------ */
+
+.mission-one{
+	position: relative;
+	padding-bottom: 130px;
+	&__content{
+		&__title{
+			font-style: normal;
+			font-weight: 700;
+			font-size: 80px;
+			line-height:  100%;
+			letter-spacing: -2px;
+			color: #000000;
+			margin-bottom: 24px;
+		}
+		&__text{
+			font-style: normal;
+			font-weight: 400;
+			font-size: 21px;
+			line-height: 30px;
+			color: #191919;
+		}
+		&__text + &__text{
+			margin-top: 20px;
+		}
+		&__btn{
+			margin-top: 40px;
+		}
+	}
+
+	&__thumb{
+		img{
+			object-fit: cover;
+			width: 100%;
+			border-radius: 20px;
+		}
+	}
+}
+
+/* ----------------------------------
+	content-one
+------------------------------------ */
+
+.content-one{
+	position: relative;
+	padding: 130px 0px;
+	background: $black;
+	&__thumb{
+		img{
+			object-fit: cover;
+			border-radius: 20px;
+		}
+	}
+	&__content{
+		margin-left: 20px;
+		&__title{
+			font-style: normal;
+			font-weight: 700;
+			font-size: 80px;
+			line-height:100%;
+			letter-spacing: -2px;
+			color: #FFFFFF;
+			margin-bottom: 24px;
+		}
+		&__text{
+			font-style: normal;
+			font-weight: 400;
+			font-size: 21px;
+			line-height: 30px;
+			color: #FFFFFF;
+			margin-bottom: 80px;
+		}
+		&__list{
+			margin-bottom: 0;
+			&__item{
+				font-style: normal;
+				font-weight: 700;
+				font-family: $heading-font;
+				font-size: 30px;
+				line-height: 133%;
+				color: $textcolor-two;
+				a{
+					color: $white;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			&__item + &__item{
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+/* ----------------------------------
+	Team
+------------------------------------ */
+
+.team-one{
+	position: relative;
+	padding-bottom: 130px;
+	.team__section{
+		padding-bottom: 80px;
+	}
+	.team__section__title{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 100%;
+		letter-spacing: -2px;
+		color: #000000;
+	}
+	&__box{
+		background: #EFEAE3;
+		border-radius: 20px;
+		padding: 20px;
+	}
+	&__thumb{
+		img{
+			object-fit: cover;
+			width: 100%;
+			border-radius: 20px;
+		}
+	}
+	&__content{
+		padding-top: 24px;
+		&__inner{
+			justify-content: space-between;
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__title{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 133%;
+		color: #000000;
+		margin-bottom: 10px;
+		a{
+			color: inherit;
+			&:hover{
+				color: $textcolor-two;
+			}
+		}
+	}
+	&__dec{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 143%;
+		color: #191919;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	&__social{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		a{
+			width: 30px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 13px;
+			color: #EFEAE3;
+			border-radius: 50%;
+			background: $black;
+			&:hover{
+				background: $textcolor-two;
+				color: $black;
 			}
 		}
 	}
