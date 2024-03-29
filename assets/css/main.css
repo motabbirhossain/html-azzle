@@ -1799,6 +1799,12 @@ button {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.team-details-one .team-one__dec {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 30px;
+  color: #000000;
+}
 .team-details-one__border {
   width: 100%;
   height: 1px;
@@ -1828,6 +1834,46 @@ button {
   font-size: 21px;
   line-height: 143%;
   color: #191919;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ----------------------------------
+	Portfolio css
+------------------------------------ */
+.portfolio-one {
+  padding: 130px 0px;
+}
+@media (min-width: 767px) {
+  .portfolio-one__list {
+    -moz-columns: 2;
+         columns: 2;
+    gap: 25px;
+  }
+}
+.portfolio-one__thumb {
+  margin-bottom: 24px;
+}
+.portfolio-one__thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+.portfolio-one__content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.portfolio-one__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: -1px;
+  color: #000000;
   margin-bottom: 0;
   padding-bottom: 0;
 }
